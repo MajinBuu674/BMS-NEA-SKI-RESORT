@@ -2,13 +2,14 @@ Key:
 Red = optional 
 Blue = necessary 
 Ski Resort - Project Criteria: 
+
 Project Overview 
 
 I intend to design and develop a comprehensive ski resort management system for a winter resort business. The system will manage customers, accommodation, memberships, reservations, ski facilities, parking, and resort services through an interactive user interface. 
 
 Stakeholders: 
 
-The main group to benefit from the new system will be adults intending to plan a holiday at my resort. They will be able to utilize the system to rent skiing equipment, reserve services such as the ski slopes themselves, or book a room at the resorts many hotels, decreasing or increasing in price depending on distance from the resort, room size, and room attributes. This system improves operational efficiency while offering customers a straightforward and convenient process for planning and managing their stay at the resort. 
+The main group to benefit from the new system will be adults intending to plan a holiday at my resort. They will be able to utilize the system to rent skiing equipment, reserve services such as the ski slopes themselves, or book a room at the resorts many hotels, decreasing or increasing in price depending on distance from the resort, room size, and room attributes. This system improves operational efficiency while offering customers a straightforward process for planning and managing their stay. 
 
 Staff at the resort will also benefit from the new system, as the system will cause reduction in staffs' workload, and therefore, increasing efficiency with better time allocation on tasks which may need more resources to complete, such as inventory, and management of systems which need constant updating to function adequately, such as ski slope traffic, equipment renting, and more 
 
@@ -16,39 +17,30 @@ With this system in place, it also means a reduction in staff, reducing OPEX (op
 
 Time/ Hardware constraints: 
 
-My project is constrained by the available development time, due to variables such as other a-level subjects, as well as exams. The project will be developed using Python on a standard computer, limiting complexity of graphics and process-intensive features. As I am still developing my programming skills on more advanced concepts the project will focus more on core functionality such as managing customers, ski slope passes, accommodation availability, package plans, and [INSERT] rather than implementing advanced features such as online payments, simulation of car park space management (if time is scarce) or live weather integration. The project will also use sample data as access to real ski resort databases is unavailable. 
+My project is constrained by the available development time, due to variables such as other a-level subjects, as well as exams. The project will be developed using Python on a standard computer, limiting complexity of graphics and process-intensive features. As I am still developing my programming skills on more advanced concepts the project will focus more on core functionality such as managing customers, ski slope passes, accommodation availability, package plans, etc rather than implementing advanced features such as online payments, simulation of car park space management (if time is scarce) or live weather integration. The project will also use sample data as access to real ski resort databases is unavailable. 
 
 ( )Core Features: 
 
-Customer Membership System 
-
-Customers can register and sign up for a membership account. 
+Customer Membership System:
+Customers can register/sign up for a membership account 
 
 Allowing for the customers to save their data, means that they dont have to keep reapplying for certain benefits or plans when booking again or renewing/changing their plan 
 
 Why each feature is necessary 
 
-Possible Extensions 
-
-Tiered memberships (Silver, Gold, Platinum) 
+Possible Extensions:
+>Tiered memberships (Silver, Gold, Platinum):
+ >Provides different benefits such as- reservations can be booked earlier, access to better services – this shows OOP  and classes being used(different membership levels = different privileges, as well as possible use of database to     check validity of member and id number. Utilise hashing to conceal private data 
 
 Automatic discount calculations 
 
-Why each feature is necessary 
+Why each feature is necessary: 
+>Members earn loyalty points from purchases and bookings. 
+>Increases likelihood of customer loyalty to the branch 
+>Points can be redeemed for discounts on resort services. 
+>Different membership benefits may apply depending on customer activity or package type. 
 
-Members earn loyalty points from purchases and bookings. 
-
-Increases likelihood of customer loyalty to the branch 
-
-Points can be redeemed for discounts on resort services. 
-
-Different membership benefits may apply depending on customer activity or package type. 
-
-Example of OOP 
-
- 
-
- 
+Example of OOP: 
 
 Equipment Rental System 
 
@@ -80,35 +72,31 @@ Object-Oriented Programming Features:
 
  Ski Slope Management 
 
-Use Object-Oriented Programming principles to represent different ski slopes. 
+Use OOP/polymorphism to represent different ski slopes. 
 
 Requirements 
 
 Different slopes have different: 
 
-Difficulty levels 
+Difficulty levels/steepness 
 
-Capacities 
+Capacities - maxnum 
 
-Prices 
+Prices – could increase based on traffic on certain slopes 
 
-Customers can view slope information. 
+Customers can view slope information such as business and availability, as well as difficulty/steepness and obviously slope price 
 
-Customers can see how busy a slope is in real time. 
+Customers can see how busy a slope is in real time – simulation utilising iteration and while loops; also uses randint 
 
 Why each feature is necessary 
 
 OOP Concepts 
 
-Classes- 
+Classes- slopes 
 
 Inheritance- slopes, accommodation 
 
-Encapsulation- customer 
-
-Polymorphism-customer  
-
- 
+Encapsulation(data abstraction)- customer 
 
 /\ Accommodation Search System 
 
@@ -136,9 +124,9 @@ Rating/features
 
 Why each feature is necessary 
 
-Additional Logic 
+Additional considerations 
 
-Resort-owned accommodation becomes cheaper the further it is from the main ski area. 
+Resort-owned accommodation becomes cheaper the further it is from the main skii area. 
 
 Discounts apply when staying within the Musa resort branch. 
 
@@ -192,6 +180,8 @@ Track occupied and available parking spaces
 
 Link parking reservations to customer bookings 
 
+If all data to do with a customer is stored in one place, it means problems to do with a customer can easily be indentified and resolved 
+
 Why each feature is necessary 
 
  
@@ -218,7 +208,7 @@ Packages may include:
 
 Breakfast 
 
-VIP lounge access 
+VIP lounge access – membership perks 
 
 Spa access 
 
@@ -232,6 +222,8 @@ Modular System
 
 Plans are modular, meaning customers can customise or combine services. 
 
+Use of encapsulation for the customer 
+
  
 
 £-Business & Pricing Logic: 
@@ -240,7 +232,7 @@ Resort Pricing System
 
 Prices vary depending on: 
 
-Distance from the ski slopes 
+Distance from the skii slopes 
 
 Accommodation type 
 
@@ -252,15 +244,15 @@ Why each feature is necessary
 
  
 
-CHECK YOUR PLAN AND ADD OR REDUCE MODULES TO YOUR PLAN           
+CHECK YOUR PLAN AND ADD OR REDUCE MODULES TO YOUR PLAN          - encapsulation 
 
  
 
 Gondola Monitoring System 
 
-Live tracking of gondola usage/capacity. 
+Live tracking of gondola usage/capacity - Customers can view how busy gondolas are in real time 
 
-Customers can view how busy gondolas are in real time. 
+Simulation of live usage and gondola traffic – use of iteration 
 
 Why each feature is necessary 
 
@@ -274,7 +266,7 @@ The system should use multiple related database tables.
 
 Possible Tables include: 
 
-Customers 
+Customers - memberships 
 
 Memberships 
 
@@ -291,6 +283,10 @@ Packages – norriture/food package, spa package etc.
 Payments 
 
 Why each feature is necessary 
+
+HOW TO IMPROVE ON THIS SECTION: 
+
+Diagrammatic example, with use of 1st, 2nd , 3rd NF 
 
 Relationships 
 
@@ -310,9 +306,7 @@ Users should be able to:
 
 Filter data based on attributes 
 
-Sort results dynamically 
-
-Search across multiple categories 
+Sort results efficiently, depending on the size of the list being sorted, filtered etc, decides type of sorting/ searching algorithm will be used (binary and merge on big lists, linear and insertion on smaller ones) 
 
 Why each feature is necessary 
 
@@ -408,15 +402,21 @@ Suggested Research Areas (from el gpt)
 
 Real-world ski resort booking systems 
 
+Ive used club med as an example 
+
 Hotel management systems 
 
 Queue/capacity monitoring systems 
 
+Looked at bluewaters passive car park system 
+
 Card validation algorithms 
+
+Luhn algorthim 
 
  
 
-This project demonstrates: 
+My project demonstrates: 
 
 Object-Oriented Programming - polymorphism 
 
@@ -426,7 +426,7 @@ Searching and sorting
 
 Relational databases 
 
-Simulations – random and while loops 
+Simulations – random and while loops(iteration) 
 
 Real-time availability systems 
 
@@ -491,101 +491,17 @@ inventory
 Accommodation: 
 
  SkiSlope: 
-
+ 
  Equipment: 
-
  Rental  Package 
-
  Reservation 
-
  Payment System 
-
  membership 
 
  
-
- 
-
 Testing 
-
 Variables 
-
 Normal 
-
 invalid 
-
 Boundary 
-
 erroneous 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
